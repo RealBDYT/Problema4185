@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double long a, b, c, d, k, e;
+
+    cout<<"Valorile numerelor"<<endl;
+    cin>>a>>b>>c>>d;
+
+    k = 0;
+
+    if (a / b < c / d) {
+        a = 12 * a;
+        b = 12 * b;
+            while (a / b < c / d) {
+                a++;
+                b++;
+                k++;
+            }
+    } else {
+    a = 12 * a;
+    b = 12 * b;
+        while (a / b > c / d) {
+            a--;
+            b--;
+            k++;
+        }
+    }
+
+    cout<<"Rezultatul"<<endl;
+    cout<<k/12;
+
+    return 0;
+}
